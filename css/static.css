@@ -1,0 +1,64 @@
+html, body {
+    font-family: Segoe UI Light, Calibri Light, Courier New;
+    background-color: #f3f3f3;
+    color: #46494C;
+}
+
+a {
+    color: #4C5C68;
+}
+
+a:hover {
+    color: #1985A1;
+}
+
+h1 { font-size: 2.565em; }
+h2 { font-size: 1.802em; }
+h3 { font-size: 1.602em; }
+h4 { font-size: 1.424em; margin: 5px 0px; }
+h5 { font-size: 1.266em; margin: 0px; }
+
+/* From https://github.com/twbs/bootstrap/blob/master/dist/css/bootstrap.css */
+.container {
+    margin-top: 60px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+  
+header h1,
+header p {
+    text-align: center;
+}
+
+header img {
+    display: block;
+    margin: auto;
+    border-radius: 50%;
+}
+
+.links {
+    width: 122px;
+    margin: auto;
+}
+
+.links a {
+    margin: 0px 5px;
+    font-size: 1.266em
+}
