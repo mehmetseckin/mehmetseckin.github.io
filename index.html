@@ -1,25 +1,28 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <title>Mehmet Seckin - Software Engineer / Microsoft Dynamics 365 Consultant</title>
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/static.css">
-</head>
-
-<body>
-    <div class="container">
-        <header>
-            <img src="//www.gravatar.com/avatar/eb4b0e7e4b0647c4c14d831e5ddf1160?s=175" title="Mehmet Seckin" />
-            <h1>Mehmet Seckin</h1>
-            <p>Software Engineer / Microsoft Dynamics 365 Consultant, MCP</p>
-        </header>
-        <div class="links">
-            <a href="//github.com/seckin92"><i class="fa fa-github" aria-hidden="true"></i></a>
-            <a href="//stackoverflow.com/story/seckin"><i class="fa fa-stack-overflow" aria-hidden="true"></i></a>
-            <a href="//linkedin.com/in/seckin92"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-            <a href="//seckin92.wordpress.com"><i class="fa fa-rss" aria-hidden="true"></i></a>
-        </div>
-    </div>
-</body>
-</html>
+---
+layout: default
+---
+<header>
+  <img src="//www.gravatar.com/avatar/eb4b0e7e4b0647c4c14d831e5ddf1160?s=175" title="Mehmet Seckin" />
+  <h1>Mehmet Seckin</h1>
+  <p>Software Engineer, Consultant</p>
+</header>
+<div class="links">
+  <a href="//github.com/seckin92"><i class="fa fa-github" aria-hidden="true"></i></a>
+  <a href="//stackoverflow.com/story/seckin"><i class="fa fa-stack-overflow" aria-hidden="true"></i></a>
+  <a href="//linkedin.com/in/seckin92"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+  <a href="/atom.xml"><i class="fa fa-rss" aria-hidden="true"></i></a>
+</div>
+<div class="tribute">
+  Powered by <a href="http://github.com/mojombo/jekyll">Jekyll</a>, inspired by <a href="//tom.preston-werner.com">Tom Preston-Werner</a>.
+</div>
+{% if site.posts.size > 0 %}
+<hr />
+<div class="all-posts">
+  <h2>Blog posts</h2>
+  <ul class="posts">
+  {% for post in site.posts %}
+    <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+  {% endfor %}
+  </ul>
+</div>
+{% endif %}

@@ -62,3 +62,32 @@ header img {
     margin: 0px 5px;
     font-size: 1.266em
 }
+
+.all-posts,
+.posts-page,
+.tribute {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.tribute {
+    font-size: smaller;
+    text-align: center;
+}
+
+.posts {
+  list-style-type: none;
+  margin-bottom: 2em;
+  padding-left: 0.1em;
+}
+
+  .posts li {
+    line-height: 1.75em;
+  }
+
+  .posts span,
+  .post .meta {
+    color: #aaa;
+    font-family: Monaco, "Courier New", monospace;
+    font-size: 80%;
+  }

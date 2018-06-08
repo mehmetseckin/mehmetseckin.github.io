@@ -1,0 +1,39 @@
+---
+layout: default
+---
+<div class="post-page">
+  <a href="/">&laquo; Home</a>
+
+  <div class="post">  
+  {{ content }}
+  </div>
+  
+  {% if site.related_posts.size > 0 %}
+  <div id="related">
+    <h2>Related Posts</h2>
+    <ul class="posts">
+    {% for post in site.related_posts limit:3 %}
+      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+    </ul>
+  </div>
+  {% endif %}
+  
+  <hr />
+  <div class="footer">
+    <p>
+        Mehmet Seckin
+        <br />
+        Software Engineer, Consultant    
+    </p>
+    <div class="links">
+      <a href="//github.com/seckin92"><i class="fa fa-github" aria-hidden="true"></i></a>
+      <a href="//stackoverflow.com/story/seckin"><i class="fa fa-stack-overflow" aria-hidden="true"></i></a>
+      <a href="//linkedin.com/in/seckin92"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+      <a href="/atom.xml"><i class="fa fa-rss" aria-hidden="true"></i></a>
+    </div>
+    <div class="tribute">
+      Powered by <a href="http://github.com/mojombo/jekyll">Jekyll</a>, inspired by <a href="//tom.preston-werner.com">Tom Preston-Werner</a>.
+    </div>
+  </div>
+</div>
