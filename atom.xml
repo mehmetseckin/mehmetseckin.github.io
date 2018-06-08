@@ -1,0 +1,26 @@
+---
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+ <title>Mehmet Seckin</title>
+ <link href="http://mehmetseckin.com/atom.xml" rel="self"/>
+ <link href="http://mehmetseckin.com/"/>
+ <updated>{{ site.time | date_to_xmlschema }}</updated>
+ <id>http://tom.preston-werner.com/</id>
+ <author>
+   <name>Mehmet Seckin</name>
+   <email>mehmet@seckin.me</email>
+ </author>
+
+ {% for post in site.posts %}
+ <entry>
+   <title>{{ post.title }}</title>
+   <link href="http://mehmetseckin.com{{ post.url }}"/>
+   <updated>{{ post.date | date_to_xmlschema }}</updated>
+   <id>http://mehmetseckin.com{{ post.id }}</id>
+   <content type="html">{{ post.content | xml_escape }}</content>
+ </entry>
+ {% endfor %}
+
+</feed>
