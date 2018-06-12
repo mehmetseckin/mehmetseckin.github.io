@@ -91,3 +91,20 @@ header img {
     font-family: Monaco, "Courier New", monospace;
     font-size: 80%;
   }
+
+.post img {
+    display: block;
+    max-width: 60%;
+    margin: 0 auto;
+}
+
+.post img + em {
+    display: block;
+    text-align: center;
+    font-size: small;
+}
+
+.post td {
+    border-top: 1px solid #ccc;
+    padding: 0.6em;
+}
