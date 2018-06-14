@@ -12,36 +12,15 @@ a:hover {
     color: #1985A1;
 }
 
-h1 { font-size: 2.565em; }
-h2 { font-size: 1.802em; }
-h3 { font-size: 1.602em; }
-h4 { font-size: 1.424em; margin: 5px 0px; }
-h5 { font-size: 1.266em; margin: 0px; }
-
 /* From https://github.com/twbs/bootstrap/blob/master/dist/css/bootstrap.css */
 .container {
-    margin-top: 60px;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
+    margin-top: 20px;
 }
-@media (min-width: 768px) {
-    .container {
-        width: 750px;
-    }
+
+header {
+    margin-top: 40px;
 }
-@media (min-width: 992px) {
-    .container {
-        width: 970px;
-    }
-}
-@media (min-width: 1200px) {
-    .container {
-        width: 1170px;
-    }
-}
-  
+
 header h1,
 header p {
     text-align: center;
@@ -66,8 +45,12 @@ header img {
 .all-posts,
 .posts-page,
 .tribute {
-    width: 60%;
     margin: 0 auto;
+}
+
+.posts-page,
+.tribute {
+    width: 60%;
 }
 
 .tribute {
@@ -91,6 +74,12 @@ header img {
     font-family: Monaco, "Courier New", monospace;
     font-size: 80%;
   }
+
+@media(max-width: 992px) {
+    .posts span {
+        display: none;
+    }
+}
 
 .post img {
     display: block;
