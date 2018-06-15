@@ -1,5 +1,5 @@
 html, body {
-    font-family: Segoe UI Light, Calibri Light, Courier New;
+    font-family: "Segoe UI Light", "Calibri Light", "Helvetica", "Arial", "Times New Roman";
     background-color: #f3f3f3;
     color: #46494C;
 }
@@ -71,7 +71,7 @@ header img {
   .posts span,
   .post .meta {
     color: #aaa;
-    font-family: Monaco, "Courier New", monospace;
+    font-family: "Courier New", "Consolas";
     font-size: 80%;
   }
 
