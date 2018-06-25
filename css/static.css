@@ -93,6 +93,10 @@ header img {
     font-size: small;
 }
 
+.post table {
+    margin-bottom: 2em;
+}
+
 .post td, 
 .post th {
     padding: 0.6em;

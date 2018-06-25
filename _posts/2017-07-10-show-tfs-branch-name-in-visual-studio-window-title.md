@@ -39,7 +39,5 @@ I’m currently using the following options globally:
 | Farthest parent folder depth | `3`                                          |
 | Pattern                      | `(⎇ [parentPath]) [solutionName] – [ideName]`|
 
-<br />
-
 ![Extension Settings](/images/vs-rename-title-settings.png)
 *My current settings to achieve the titles seen above. The folder depth may vary for your appliance*
