@@ -81,6 +81,10 @@ header img {
     }
 }
 
+.post {
+    margin-top: 24px;
+  }
+
 .post > p > img {
     display: block;
     max-width: 60%;
