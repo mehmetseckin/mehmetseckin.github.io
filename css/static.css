@@ -81,27 +81,27 @@ header img {
     }
 }
 
-.post img {
+.post > p > img {
     display: block;
     max-width: 60%;
     margin: 0 auto;
 }
 
-.post img + em {
+.post > p > img + em {
     display: block;
     text-align: center;
     font-size: small;
 }
 
-.post table {
+.post > table {
     margin-bottom: 2em;
 }
 
-.post td, 
-.post th {
+.post > table > tbody > tr > td, 
+.post > table > thead > tr > th {
     padding: 0.6em;
 }
 
-.post td {
+.post > table > tbody > tr > td {
     border-top: 1px solid #ccc;
 }
