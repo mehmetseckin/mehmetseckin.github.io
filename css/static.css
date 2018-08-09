@@ -73,7 +73,8 @@ header img {
 
 .post {
     margin-top: 24px;
-  }
+    margin-bottom: 48px;
+}
 
 .post > p > img {
     display: block;
