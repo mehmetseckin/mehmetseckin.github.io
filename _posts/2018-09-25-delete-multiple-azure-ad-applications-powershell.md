@@ -16,46 +16,71 @@ Check it out:
 
 ```powershell
 <#
-.SYNOPSIS
-Remove local git branches that are deleted from the origin.
+  .SYNOPSIS
+  Delete multiple Azure AD applications based on a search criteria.
+  
+  .DESCRIPTION
+  The Remove-AzureADApplications cmdlet displays a list of all applications registered in the Azure Active Directory, and deletes specified applications from Azure Active Directory (AD).
+  
+  .PARAMETER SearchString
+  The service principal search string.
 
-.DESCRIPTION
-Removes local git branches that are deleted from the origin using `git fetch --prune` and `git branch -[dD]`.
+  .PARAMETER Force
+  Forces the command to run without asking for user confirmation. This will remove all applications that match the filter criteria specified by the SearchString parameter, without displaying a list and waiting for the user to specify which applications are going to be deleted. If the SearchString parameter is omitted, this will attempt to delete all application registrations without confirmation. Use with caution.
 
-.PARAMETER Force
-Switch to to force removal using `git branch -D` instead of `git branch -d`.
+  .EXAMPLE
+  Remove-AzureADApplications
 
-.EXAMPLE
-Remove-DeletedGitBranches
-Removes merged non-existing branches.
+  Displays the list of all applications registered in the Azure Active Directory, and deletes selected applications.
+  
+  .EXAMPLE
+  Remove-AzureADApplications -SearchString "deleteme" -Force
 
-.EXAMPLE
-Remove-DeletedGitBranches -Force
-Removes all non-existing branches.
-
-.NOTES
-This cmdlet uses `git fetch --prune`, so it will delete references to non-existing branches in the process. Use with caution.
+  Remove applications whose names start with "deleteme" without displaying a list for the user to select.
 #>
-function Remove-DeletedGitBranches
+function Remove-AzureADApplications 
 {
+    [CmdletBinding()]
     param
     (
-        [Parameter()]
+        [Parameter(HelpMessage = "The service principal search string.")]
+        [string]
+        $SearchString = "",    
+        [Parameter(HelpMessage ="Forces the command to run without asking for user confirmation. This will remove all applications that match the filter criteria specified by the SearchString parameter. If the SearchString parameter is omitted, this will attempt to delete all application registrations without confirmation. Use with caution.")]
         [Switch]
         $Force
     )
 
-    $null = (git fetch --all --prune);
-    $branches = git branch -vv | Select-String -Pattern ": gone]" | ForEach-Object { $_.toString().Split(" ")[2] };
+    Import-Module "AzureAD";
+
+    if ($SearchString) {
+        $apps = (Get-AzureADApplication -SearchString $SearchString)
+    }
+    else {
+        Write-Warning "No search string specified. Fetching all applications."
+        $apps = (Get-AzureADApplication -All $true)
+    }
+
     if($Force)
     {
-        $branches | ForEach-Object {git branch -D $_};
+        $selectedApps = $apps;
     }
-    else 
-    {        
-        $branches | ForEach-Object {git branch -d $_};        
+    else
+    {
+        $selectedApps = $apps | Out-GridView -Title "Please select applications to remove..." -OutputMode Multiple;
+    }
+
+    $selectedApps | ForEach-Object {
+    
+        $displayName = $_.DisplayName;
+        $objectId = $_.ObjectId;
+        try {
+            Remove-AzureADApplication -ObjectId $objectId
+            Write-Host "Removed $displayName..." -ForegroundColor Green;
+        }
+        catch {
+            Write-Host "Failed to remove $displayName..." -ForegroundColor Red;
+        }
     }
 }
-
-Set-Alias -Name "rmdelbr" -Value Remove-DeletedGitBranches
 ```
