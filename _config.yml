@@ -1,5 +1,8 @@
 plugins:
   - jekyll-seo-tag
+  - jekyll-sitemap
+
+url: "https://www.mehmetseckin.com/"
 github: [metadata]
 repository: mehmetseckin/mehmetseckin.github.io
 title: Mehmet Seckin
