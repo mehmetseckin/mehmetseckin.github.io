@@ -12,3 +12,24 @@ social:
   links:
     - https://github.com/mehmetseckin/
     - https://linkedin.com/in/mehmet-seckin/
+
+emptyArray: []
+
+comments:
+  receiver: https://mehmetseckin-jekyll-blog-comments.azurewebsites.net/api/PostComment
+
+defaults:
+  -
+    scope:
+      path: '_posts'
+      type: posts
+    values:
+      layout: post
+      author: mehmetseckin
+      commenting: open
+
+authors:
+  mehmetseckin:
+    name: Mehmet Seckin
+    email: mehmet@seckin.me
+    url: https://www.mehmetseckin.com
