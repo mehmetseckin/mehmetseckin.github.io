@@ -45,12 +45,8 @@
     </div>
   </fieldset>
 </form>
-</form>
 <script>
     function setupForm() {
-      var status = document.getElementById('commentstatus')
-      status.innerText = ''
-  
       var form = document.getElementById('commentform')
       var isInvalid = form.checkValidity() === false;
       form.classList.add('was-validated');
@@ -59,8 +55,9 @@
       }
   
       var button = document.getElementById('commentbutton')
-      if (button.innerText != 'Confirm response ') {
-        button.innerText = 'Confirm response'
+      var confirmText = 'Confirm response';
+      if (button.innerText != confirmText) {
+        button.innerText = confirmText;
         return
       }
   
