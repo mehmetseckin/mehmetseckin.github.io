@@ -6,12 +6,16 @@ url: "https://www.mehmetseckin.com"
 github: [metadata]
 repository: mehmetseckin/mehmetseckin.github.io
 title: Mehmet Seckin
-description: My personal website and blog.
+description: My personal website and blog
 social:
   name: Mehmet Seckin
   links:
     - https://github.com/mehmetseckin/
     - https://linkedin.com/in/mehmet-seckin/
+
+author:
+  name: Mehmet Seckin
+  email: mehmet@seckin.me
 
 emptyArray: []
 
