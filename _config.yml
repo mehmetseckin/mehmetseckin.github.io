@@ -37,3 +37,5 @@ authors:
     name: Mehmet Seckin
     email: mehmet@seckin.me
     url: https://www.mehmetseckin.com
+
+theme: jekyll-theme-minimal
