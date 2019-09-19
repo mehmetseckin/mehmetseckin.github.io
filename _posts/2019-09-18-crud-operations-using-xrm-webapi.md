@@ -18,7 +18,7 @@ Here are the examples I've come up with, hope this saves someone some time!:
 
 The following example demonstrates how to perform a Create operation.
 
-```JavaScript
+```js
 var Sdk = window.Sdk || {};
 /**
  * Request to execute a create operation
@@ -58,7 +58,7 @@ Xrm.WebApi.online.execute(createRequest).then(
 
 The following example demonstrates how to perform a Retrieve operation.
 
-```JavaScript
+```js
 var Sdk = window.Sdk || {};
 /**
  * Request to execute a retrieve operation
@@ -96,7 +96,7 @@ Xrm.WebApi.online.execute(retrieveRequest).then(
 
 The following example demonstrates how to perform a Update operation.
 
-```JavaScript
+```js
 var Sdk = window.Sdk || {};
 /**
  * Request to execute an update operation
@@ -137,7 +137,7 @@ Xrm.WebApi.online.execute(updateRequest).then(
 
 The following example demonstrates how to perform a Delete operation.
 
-```JavaScript
+```js
 var Sdk = window.Sdk || {};
 /**
  * Request to execute a delete operation
