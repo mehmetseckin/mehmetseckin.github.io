@@ -12,11 +12,11 @@ I have recently had a challenge where I needed to perform some CRUD operations o
 
 While there are helper methods to perform CRUD operations on a single record, there were no examples of this in the PowerApps documentation, so I decided to add my own in [PR#626](https://github.com/MicrosoftDocs/powerapps-docs/pull/626) (any comments/improvements appreciated!).
 
+> These examples are now in the PowerApps docs: [Xrm.WebApi.online.execute (Client API reference)](https://docs.microsoft.com/en-us/powerapps/developer/model-driven-apps/clientapi/reference/xrm-webapi/online/execute#perform-crud-operations).
+
 Here are the examples I've come up with, hope this saves someone some time!:
 
 #### Create a record
-
-The following example demonstrates how to perform a Create operation.
 
 ```js
 var Sdk = window.Sdk || {};
@@ -36,8 +36,9 @@ Sdk.CreateRequest = function (entityName, payload) {
     };
 };
 // Construct a request object from the metadata
-var payload = {};
-payload["name"] = "Fabrikam Inc.";
+var payload = {
+    name: "Fabrikam Inc."
+};
 var createRequest = new Sdk.CreateRequest("account", payload);
 // Use the request object to execute the function
 Xrm.WebApi.online.execute(createRequest).then(
@@ -75,14 +76,22 @@ Sdk.RetrieveRequest = function (entityReference, columns) {
         };
     };
 };
-// Construct a request object from the metadata
-var retrieveRequest = new Sdk.RetrieveRequest({ etn: "account", id: "87547d08-b9d0-e911-a826-000d3a43d70a" }, ["name"]);
+// Construct request object from the metadata
+var entityReference = {
+    entityType: "account",
+    id: "0b9b8a43-e0dd-e911-a849-000d3a11e59b"
+};
+var retrieveRequest = new Sdk.RetrieveRequest(entityReference, ["name"]);
 // Use the request object to execute the function
 Xrm.WebApi.online.execute(retrieveRequest).then(
     function (result) {
         if (result.ok) {
             console.log("Status: %s %s", result.status, result.statusText);
-            // perform other operations as required;
+            result.json().then(
+                function (response) {
+                    console.log("Name: %s", response.name);
+                    // perform other operations as required;
+                });
         }
     },
     function (error) {
@@ -115,9 +124,10 @@ Sdk.UpdateRequest = function (entityName, entityId, payload) {
     };
 };
 // Construct a request object from the metadata
-var payload = {};
-payload["name"] = "AdventureWorks Inc.";
-var updateRequest = new Sdk.UpdateRequest("account", "87547d08-b9d0-e911-a826-000d3a43d70a", payload);
+var payload = {
+    name: "Updated Sample Account"
+};
+var updateRequest = new Sdk.UpdateRequest("account", "0b9b8a43-e0dd-e911-a849-000d3a11e59b", payload);
 // Use the request object to execute the function
 Xrm.WebApi.online.execute(updateRequest).then(
     function (result) {
@@ -153,8 +163,12 @@ Sdk.DeleteRequest = function (entityReference) {
         };
     };
 };
-// Construct a request object from the metadata
-var deleteRequest = new Sdk.DeleteRequest({ entityType: "account", id: "87547d08-b9d0-e911-a826-000d3a43d70a" });
+// Construct request object from the metadata
+var entityReference = {
+    entityType: "account",
+    id: "0b9b8a43-e0dd-e911-a849-000d3a11e59b"
+};
+var deleteRequest = new Sdk.DeleteRequest(entityReference);
 // Use the request object to execute the function
 Xrm.WebApi.online.execute(deleteRequest).then(
     function (result) {
