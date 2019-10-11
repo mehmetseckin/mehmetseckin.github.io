@@ -23,14 +23,14 @@ comments:
   receiver: https://mehmetseckin-jekyll-blog-comments.azurewebsites.net/api/PostComment
 
 defaults:
-  -
-    scope:
+  - scope:
       path: '_posts'
       type: posts
     values:
       layout: post
       author: mehmetseckin
       commenting: open
+  - 
 
 authors:
   mehmetseckin:
