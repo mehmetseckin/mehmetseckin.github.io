@@ -39,4 +39,4 @@ authors:
 
 theme: jekyll-theme-minimal
 
-include: [.well-known]
+include: ['.well-known/microsoft-identity-association.json']
