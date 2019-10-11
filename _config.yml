@@ -22,6 +22,10 @@ emptyArray: []
 comments:
   receiver: https://mehmetseckin-jekyll-blog-comments.azurewebsites.net/api/PostComment
 
+collections:
+  .well-known:
+    output: true
+
 defaults:
   - scope:
       path: '_posts'
@@ -38,5 +42,3 @@ authors:
     url: https://www.mehmetseckin.com
 
 theme: jekyll-theme-minimal
-
-include: ['.well-known/microsoft-identity-association.json']
