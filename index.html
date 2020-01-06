@@ -9,9 +9,6 @@ layout: default
 
 {% include links.html %}
 
-<div class="tribute">
-  Powered by <a href="http://github.com/mojombo/jekyll">Jekyll</a>, inspired by <a href="//tom.preston-werner.com">Tom Preston-Werner</a>.
-</div>
 {% if site.posts.size > 0 %}
 <hr />
 <div class="all-posts">
@@ -23,3 +20,6 @@ layout: default
   </ul>
 </div>
 {% endif %}
+
+<hr />
+{% include tribute.html %}
