@@ -6,15 +6,9 @@ layout: default
   <h1>Mehmet Seckin</h1>
   <p>Software Engineer, Consultant</p>
 </header>
-<div class="links">
-  <a href="//github.com/mehmetseckin"><i class="fa fa-github" aria-hidden="true"></i></a>
-  <a href="//stackoverflow.com/story/mehmetseckin"><i class="fa fa-stack-overflow" aria-hidden="true"></i></a>
-  <a href="//linkedin.com/in/mehmet-seckin"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-  <a href="/atom.xml"><i class="fa fa-rss" aria-hidden="true"></i></a>
-</div>
-<div class="tribute">
-  Powered by <a href="http://github.com/mojombo/jekyll">Jekyll</a>, inspired by <a href="//tom.preston-werner.com">Tom Preston-Werner</a>.
-</div>
+
+{% include links.html %}
+
 {% if site.posts.size > 0 %}
 <hr />
 <div class="all-posts">
@@ -26,3 +20,6 @@ layout: default
   </ul>
 </div>
 {% endif %}
+
+<hr />
+{% include tribute.html %}
