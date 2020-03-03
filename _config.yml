@@ -19,9 +19,6 @@ author:
 
 emptyArray: []
 
-comments:
-  receiver: https://mehmetseckin-jekyll-blog-comments.azurewebsites.net/api/PostComment
-
 collections:
   .well-known:
     output: true
