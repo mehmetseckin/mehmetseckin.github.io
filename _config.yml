@@ -20,9 +20,9 @@ author:
 
 emptyArray: []
 
-collections:
-  .well-known:
-    output: true
+# collections:
+#   .well-known:
+#     output: true
 
 defaults:
   - scope:
