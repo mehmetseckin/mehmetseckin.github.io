@@ -33,19 +33,12 @@ header img {
 }
 
 .all-posts,
-.posts-page,
-.tribute {
+.posts-page {
     margin: 0 auto;
 }
 
-.posts-page,
-.tribute {
+.posts-page {
     width: 60%;
-}
-
-.tribute {
-    font-size: smaller;
-    text-align: center;
 }
 
 .posts {
