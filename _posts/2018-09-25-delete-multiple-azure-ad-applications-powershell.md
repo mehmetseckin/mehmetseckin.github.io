@@ -1,12 +1,8 @@
 ---
 layout: post
 title: Delete multiple Azure Active Directory applications via PowerShell
+meta: 25 September 2018, Birmingham, UK
 ---
-
-{{ page.title }}
-================
-
-<p class="meta">25 September 2018, Birmingham, UK</p>
 
 Recently, I needed a quick way to delete multiple Azure Active Directory applications. This is unfortunately not possible through the Azure portal, so it was time for a little PowerShell magic.
 

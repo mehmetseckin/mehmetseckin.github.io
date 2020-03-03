@@ -1,15 +1,28 @@
 ---
 layout: default
-comments: true
 ---
 <div class="post-page">
   <a href="/">&laquo; Home</a>
 
-  <div class="post">  
+  <div class="post">
+  
+  {% if page.title %}
+  <h1>{{ page.title }}</h1>
+  {% endif %}
+  
+  <p class="meta">
+    {% if page.meta %}
+      {{ page.meta }} &bullet; 
+    {% endif %}
+    <a href="#disqus_thread">Post a comment</a>
+  </p>
+
   {{ content }}
   </div>
-  
-  {% include disqus.html %}
+
+  {% if page.commenting == 'open' %}
+    {% include disqus.html %}
+  {% endif %}
   
   {% if site.related_posts.size > 0 %}
   <div id="related">

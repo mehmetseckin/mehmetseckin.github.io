@@ -1,12 +1,8 @@
 ---
 layout: post
 title: Perform CRUD Operations using `Xrm.WebApi`
+meta: 18 September 2019, Birmingham, UK
 ---
-
-{{ page.title }}
-================
-
-<p class="meta">18 September 2019, Birmingham, UK</p>
 
 I have recently had a challenge where I needed to perform some CRUD operations on a bunch of records, and wondered whether I could use the Client API `Xrm.WebApi.online.executeMultiple` to achieve this.
 

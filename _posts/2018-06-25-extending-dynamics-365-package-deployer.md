@@ -1,12 +1,8 @@
 ---
 layout: post
 title: Extending Dynamics 365 Package Deployer
+meta: 25 June 2018, Windsor, UK
 ---
-
-{{ page.title }}
-================
-
-<p class="meta">25 June 2018, Windsor, UK</p>
 
 The Dynamics 365 Package Deployer is a great tool that allows you to move your customisations and data between environments in bulk.
 

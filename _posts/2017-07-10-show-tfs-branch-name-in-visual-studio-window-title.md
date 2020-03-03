@@ -1,12 +1,8 @@
 ---
 layout: post
 title: Show TFS branch name in Visual Studio Window Title
+meta: 10 July 2017, Birmingham, UK
 ---
-
-{{ page.title }}
-================
-
-<p class="meta">10 July 2017, Birmingham, UK</p>
 
 If you’ve been working with Visual Studio, TFS and have multiple branches in your project, you probably felt lost at times.
 

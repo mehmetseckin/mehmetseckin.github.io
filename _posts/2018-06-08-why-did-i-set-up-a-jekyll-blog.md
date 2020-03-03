@@ -1,12 +1,8 @@
 ---
 layout: post
 title: Why did I set up a Jekyll blog?
+meta: 08 June 2018, Birmingham, UK
 ---
-
-{{ page.title }}
-================
-
-<p class="meta">08 June 2018, Birmingham, UK</p>
 
 I rarely blog, and often lose track of the blogging engines I've set up, and lose my -already rare- blog posts into the void. Therefore, I decided to set up a [Jekyll](https://github.com/mojombo/jekyll) blog, inspired by [Tom Preston-Werner](http://tom.preston-werner.com).
 

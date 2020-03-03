@@ -1,12 +1,8 @@
 ---
 layout: post
 title: Creating nice JSON strings on PHP
+meta: 03 November 2013, Antakya, Turkey
 ---
-
-{{ page.title }}
-================
-
-<p class="meta">03 November 2013, Antakya, Turkey</p>
 
 Hello everyone!
 

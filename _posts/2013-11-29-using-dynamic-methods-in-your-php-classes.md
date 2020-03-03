@@ -1,12 +1,8 @@
 ---
 layout: post
 title: Using dynamic methods in your PHP Classes
+meta: 29 November 2013, Antakya, Turkey
 ---
-
-{{ page.title }}
-================
-
-<p class="meta">29 November 2013, Antakya, Turkey</p>
 
 Hello all!
 

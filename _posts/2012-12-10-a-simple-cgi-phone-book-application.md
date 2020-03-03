@@ -1,12 +1,8 @@
 ---
 layout: post
 title: A Simple CGI Phone Book Application
+meta: 10 December 2012, Antakya, Turkey
 ---
-
-{{ page.title }}
-================
-
-<p class="meta">10 December 2012, Antakya, Turkey</p>
 
 w00t! Hello all,
 

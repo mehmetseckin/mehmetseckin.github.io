@@ -1,11 +1,8 @@
 ---
 layout: post
 title: A .NET Native Alternative to JSON.NET (a.k.a. Newtonsoft.Json) for Dynamics 365 Plugins
+meta: 23 January 2020, Birmingham, UK
 ---
-
-# {{ page.title }}
-
-<p class="meta">23 January 2020, Birmingham, UK</p>
 
 ## Background
 

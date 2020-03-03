@@ -3,8 +3,6 @@ layout: post
 title: Recommendations on Git Commits and Pull Requests
 ---
 
-# {{ page.title }}
-
 A project's long-term success is tightly coupled by its maintainability. A clean and well crafted source control history is one of the most important and powerful tools when it comes to maintain projects.
 
 In this document, I will try to provide some recommendations to help us build and keep a clean source control history and make life easier for both our future selves and whoever might inherit and maintain your codebase.
