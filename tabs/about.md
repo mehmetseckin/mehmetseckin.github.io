@@ -9,8 +9,9 @@ title: About
 ---
 
 # Mehmet Seckin
-*{{ tagline }}*
+Software Engineer, Consultant
 
 Hi! Thanks for visiting my website.
 
-I'm a consultant software engineer, with a focus on enterprise cloud software architecture, Microsoft Azure and Power Platform. I design and build effective, scalable and extensible solutions that make people’s lives easier.
+I'm a consultant software engineer with a focus on enterprise cloud software architecture, Microsoft Azure and Power Platform. 
+I design and build effective, scalable and extensible solutions that make people’s lives easier.
