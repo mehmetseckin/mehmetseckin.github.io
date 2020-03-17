@@ -8,10 +8,11 @@ title: About
 # MIT License
 ---
 
-# Mehmet Seckin
-Software Engineer, Consultant
+## Mehmet Seckin
+_Software Engineer, Consultant_
 
-Hi! Thanks for visiting my website.
+Hi there! Thanks for visiting my website.
 
-I'm a consultant software engineer with a focus on enterprise cloud software architecture, Microsoft Azure and Power Platform. 
-I design and build effective, scalable and extensible solutions that make people’s lives easier.
+I'm a Software Engineer working as a Lead Consultant at [Hitachi Solutions Europe](https://www.hitachi-solutions.co.uk). My current areas of focus are enterprise cloud software architecture, Microsoft Azure and Power Platform. I design and build effective, scalable and extensible solutions that make people's lives easier.
+
+I like to spend my free time reading, playing with my kids, working on my pet projects, contributing to open-source software, exploring new things and blogging.
