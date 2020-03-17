@@ -64,17 +64,20 @@
   <span class="icon-border"></span>
   {% endif %}
 
-  <a href="https://github.com/{{ site.github.username }}" target="_blank">
+  <a href="https://github.com/{{ site.github.username }}" title="Fork me on GitHub" target="_blank">
     <i class="fab fa-github-alt"></i>
   </a>
-  <a href="https://twitter.com/{{ site.twitter.username }}" target="_blank">
+  <a href="https://twitter.com/{{ site.twitter.username }}" title="Follow me on Twitter" target="_blank">
     <i class="fab fa-twitter"></i>
   </a>
+  <a href="https://www.linkedin.com/in/{{ site.linkedin.username }}" title="Connect with me on LinkedIn" target="_blank">
+    <i class="fab fa-linkedin-in"></i>
+  </a>
   {% assign email = site.social.email | split: '@' %}
-  <a href="javascript:window.open('mailto:' + ['{{ email[0] }}','{{ email[1] }}'].join('@'))">
+  <a href="javascript:window.open('mailto:' + ['{{ email[0] }}','{{ email[1] }}'].join('@'))" title="Send me an e-mail" >
     <i class="fas fa-envelope"></i>
   </a>
-  <a href="{{ site.baseurl }}/feed.xml" target="_blank">
+  <a href="{{ site.baseurl }}/feed.xml" target="_blank" title="Subscribe to my feed">
     <i class="fas fa-rss"></i>
   </a>
 
