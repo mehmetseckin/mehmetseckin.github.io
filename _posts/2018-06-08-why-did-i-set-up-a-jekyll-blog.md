@@ -3,6 +3,8 @@ title: Why did I set up a Jekyll blog?
 date: 2018-06-08 00:00:00 +0000
 categories: [Miscellaneous]
 tags: [jekyll, blog, quickstart]
+seo:
+  date_modified: 2020-03-17 00:40:12 +0000
 ---
 
 I rarely blog, and often lose track of the blogging engines I've set up, and lose my -already rare- blog posts into the void. Therefore, I decided to set up a [Jekyll](https://github.com/mojombo/jekyll) blog, inspired by [Tom Preston-Werner](http://tom.preston-werner.com).

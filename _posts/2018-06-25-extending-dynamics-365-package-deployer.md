@@ -3,6 +3,8 @@ title: Extending Dynamics 365 Package Deployer
 date: 2018-06-25 00:00:00 +0000
 categories: [Dynamics 365, Software Engineering]
 tags: [package deployer, dynamics 365, alm, devops]
+seo:
+  date_modified: 2020-03-17 00:40:12 +0000
 ---
 
 The Dynamics 365 Package Deployer is a great tool that allows you to move your customisations and data between environments in bulk.

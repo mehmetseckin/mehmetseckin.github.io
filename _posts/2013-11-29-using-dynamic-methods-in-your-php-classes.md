@@ -3,6 +3,8 @@ title: Using dynamic methods in your PHP Classes
 meta: 2013-11-29 00:00:00 +0000
 categories: [Miscellaneous]
 tags: [php, dynamic, getter, setter]
+seo:
+  date_modified: 2020-03-17 00:40:12 +0000
 ---
 
 Hello all!

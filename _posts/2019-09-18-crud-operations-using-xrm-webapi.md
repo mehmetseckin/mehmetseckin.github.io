@@ -3,6 +3,8 @@ title: Perform CRUD Operations using `Xrm.WebApi`
 date: 2019-09-18 00:00:00 +0000
 categories: [Tips and Tricks, Dynamics 365]
 tags: [javascript, dynamics 365, examples, crud, webapi]
+seo:
+  date_modified: 2020-03-17 00:40:12 +0000
 ---
 
 I have recently had a challenge where I needed to perform some CRUD operations on a bunch of records, and wondered whether I could use the Client API `Xrm.WebApi.online.executeMultiple` to achieve this.

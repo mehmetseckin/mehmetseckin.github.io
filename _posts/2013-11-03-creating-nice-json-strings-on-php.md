@@ -3,6 +3,8 @@ title: Creating nice JSON strings on PHP
 date: 2013-11-03 00:00:00 +0000
 categories: [Miscellaneous]
 tags: [php, json, format]
+seo:
+  date_modified: 2020-03-17 00:40:12 +0000
 ---
 
 Hello everyone!

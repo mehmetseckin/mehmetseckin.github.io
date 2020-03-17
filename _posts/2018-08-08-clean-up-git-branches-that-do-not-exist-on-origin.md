@@ -3,6 +3,8 @@ title: Clean up git branches that do not exist on origin
 date: 2018-08-08 00:00:00 +0000
 categories: [Tips and Tricks, Git]
 tags: [git, branch, clean, powershell, productivity]
+seo:
+  date_modified: 2020-03-17 00:40:12 +0000
 ---
 
 After our team worked on a git repository for a while, we accumulated a lot of useless branches that are no longer being used. We've removed these branches regularly from the origin, but the local branches remained in everyone's workstations like zombies.

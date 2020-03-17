@@ -3,6 +3,8 @@ title: Show TFS branch name in Visual Studio Window Title
 date: 2017-07-10 00:00:00 +0000
 categories: [Software Engineering, Tips]
 tags: [visual studio, tfs, branch]
+seo:
+  date_modified: 2020-03-17 00:40:12 +0000
 ---
 
 If you’ve been working with Visual Studio, TFS and have multiple branches in your project, you probably felt lost at times.

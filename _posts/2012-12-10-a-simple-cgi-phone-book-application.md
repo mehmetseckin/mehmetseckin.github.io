@@ -3,6 +3,8 @@ title: A Simple CGI Phone Book Application
 date: 2012-12-10 00:00:00 +0000
 categories: [Miscellaneous]
 tags: [cgi, perl, assignment]
+seo:
+  date_modified: 2020-03-17 00:40:12 +0000
 ---
 
 w00t! Hello all,

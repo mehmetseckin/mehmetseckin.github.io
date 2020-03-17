@@ -3,6 +3,8 @@ title: 'My First PCF Control: TimeZoneDisplay'
 date: 2020-02-21 00:00:00 +0000
 categories: [Tips and Tricks, Power Platform, PowerApps Component Framework]
 tags: [typescript, pcf, timezone, react, office, ui, fabric]
+seo:
+  date_modified: 2020-03-17 00:40:12 +0000
 ---
 
 PowerApps Component Framework is a new way to build helpful, reusable components that provide better user experiences in an efficient and maintainable way. I have been looking for a PCF control idea to learn and explore this new framework and its capabilities.
