@@ -40,7 +40,7 @@ social:
     - https://www.facebook.com/seckin92
     - https://www.linkedin.com/in/mehmet-seckin
 
-google_site_verification: google_meta_tag_verification # change to your verification string
+google_site_verification: zGNbaTbOUU5JmrYSUDf5kj-PUoeuupzQD4TCyXxnL1w # change to your verification string
 
 #--------------------------
 
@@ -52,7 +52,7 @@ timezone: Europe/London
 
 google_analytics:
   # Fill with your Google Analytics ID
-  id: ''
+  id: 'UA-120541595-1'
   # The Google Analytics pageviews switch.
   # DO NOT enable it unless you know how to deploy the Google Analytics superProxy.
   pv: false
