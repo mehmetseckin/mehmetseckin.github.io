@@ -8,4 +8,9 @@ title: About
 # MIT License
 ---
 
-> **Note**: Add Markdown syntax content to file `tabs/about.md` and it will show up on this page.
+# Mehmet Seckin
+*{{ tagline }}*
+
+Hi! Thanks for visiting my website.
+
+I'm a consultant software engineer, with a focus on enterprise cloud software architecture, Microsoft Azure and Power Platform. I design and build effective, scalable and extensible solutions that make people’s lives easier.
