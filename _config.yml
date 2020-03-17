@@ -35,10 +35,10 @@ social:
   email: mehmet@seckin.me             # change to your email address
   links:
     # The first element serves as the copyright owner's link
+    - https://www.linkedin.com/in/mehmet-seckin
     - https://twitter.com/_mehmetseckin      # change to your twitter homepage
     - https://github.com/mehmetseckin       # change to your github homepage
     - https://www.facebook.com/seckin92
-    - https://www.linkedin.com/in/mehmet-seckin
 
 google_site_verification: zGNbaTbOUU5JmrYSUDf5kj-PUoeuupzQD4TCyXxnL1w # change to your verification string
 
