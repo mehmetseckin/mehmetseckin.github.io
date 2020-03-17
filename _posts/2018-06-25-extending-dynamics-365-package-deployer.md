@@ -1,14 +1,15 @@
 ---
-layout: post
 title: Extending Dynamics 365 Package Deployer
-meta: 25 June 2018, Windsor, UK
+date: 2018-06-25 00:00:00 +0000
+categories: [Dynamics 365, Software Engineering]
+tags: [package deployer, dynamics 365, alm, devops]
 ---
 
 The Dynamics 365 Package Deployer is a great tool that allows you to move your customisations and data between environments in bulk.
 
 It imports your solutions and data, and provides an API to hook your custom code up to this process at certain points. These hooks are as follows:
 
-![Custom code hooks for Dynamics 365 Package Deployer process](/images/dynamics-365-package-deployer-hooks.png)
+![Custom code hooks for Dynamics 365 Package Deployer process]({{ "/assets/img/posts/dynamics-365-package-deployer-hooks.png" | relative_url }})
 *Custom code hooks for Dynamics 365 Package Deployer process*
 
 | Method Name | Execution Time |
@@ -27,7 +28,7 @@ Another cool property that is provided via the Dynamics 365 Package Deployer API
 
 The Package Deployer also supports customised Welcome and End HTML pages for license agreements, release notes and whatnot. This also supports javascript, however I haven't tried to run a full-blown single page application on there, and I believe the javascript support would be somewhat limited.
 
-![A JavaScript alert from a custom welcome page in Dynamics 365 deployment package](/images/dynamics-365-package-deployer-script-alert.png)
+![A JavaScript alert from a custom welcome page in Dynamics 365 deployment package]({{ "/assets/img/posts/dynamics-365-package-deployer-script-alert.png" | relative_url }})
 *A JavaScript alert from a custom welcome page in Dynamics 365 deployment package*
 
 There is a lot of clever stuff that can be done using these extension points if you want to customise, enhance and automate the deployment process of your Dynamics 365 applications.

@@ -1,30 +1,56 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120541595-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'UA-120541595-1');
-  </script>
-  <meta charset="utf-8">
-  <meta name="author" content="Mehmet Seckin" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="stylesheet" href="//stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
-  <link rel="stylesheet" href="/css/highlight.css">
-  <link rel="stylesheet" href="/css/static.css">
-  {% seo %}
-</head>
+---
+layout: compress
+# Default layout
+# v2.0
+# https://github.com/cotes2020/jekyll-theme-chirpy
+# © 2017-2019 Cotes Chung
+# MIT Licensed
+---
 
-<body>
-  <div class="container">
-    <div class="content">
-    {{ content }}
+<!DOCTYPE html>
+
+{% capture prefer_mode %}
+  {% if site.theme_mode != "dual" %}
+    mode="{{ site.theme_mode }}"
+  {% endif %}
+{% endcapture %}
+
+<html lang="en" {{ prefer_mode }} >
+
+  {% include head.html %}
+
+  <body data-spy="scroll" data-target="#toc">
+    <div id="sidebar" class="d-flex flex-column">
+      {% include sidebar.html %}
     </div>
-  </div>
-  <script id="dsq-count-scr" src="//mehmetseckin-com.disqus.com/count.js" async></script>
-</body>
+    <div id="main-wrapper">
+      {% include topbar.html %}
+      <div id="main">
+
+        {% capture _content %}
+          {{ content }}
+        {% endcapture %}
+
+        {% include fixlinenos.html %}
+        {{ _content }}
+
+        {% include footer.html %}
+      </div>
+      {% include search-results.html %}
+    </div>
+
+    <div id="mask"></div>
+
+    <a id="back-to-top" href="#" class="btn btn-lg btn-box-shadow" role="button">
+      <i class="fas fa-angle-up"></i>
+    </a>
+
+    {% if jekyll.environment == 'production' %}
+      {% include google-analytics.html %}
+    {% endif %}
+
+    {% include search-loader.html %}
+
+  </body>
+
 </html>

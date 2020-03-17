@@ -1,7 +1,8 @@
 ---
-layout: post
 title: A .NET Native Alternative to JSON.NET (a.k.a. Newtonsoft.Json) for Dynamics 365 Plugins
-meta: 23 January 2020, Birmingham, UK
+date: 2020-01-23 00:00:00 +0000
+categories: [Tips and Tricks, Dynamics 365]
+tags: [c#, dynamics 365, json, ilmerge, serialization]
 ---
 
 ## Background

@@ -1,6 +1,8 @@
 ---
-layout: post
 title: Recommendations on Git Commits and Pull Requests
+date: 2019-01-24 00:00:00 +0000
+categories: [Tips and Tricks, Software Engineering, Git]
+tags: [git, commit, pull, pr, history, source, maintenance]
 ---
 
 A project's long-term success is tightly coupled by its maintainability. A clean and well crafted source control history is one of the most important and powerful tools when it comes to maintain projects.

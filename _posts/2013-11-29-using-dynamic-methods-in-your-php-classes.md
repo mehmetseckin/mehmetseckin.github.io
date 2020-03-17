@@ -1,7 +1,8 @@
 ---
-layout: post
 title: Using dynamic methods in your PHP Classes
-meta: 29 November 2013, Antakya, Turkey
+meta: 2013-11-29 00:00:00 +0000
+categories: [Miscellaneous]
+tags: [php, dynamic, getter, setter]
 ---
 
 Hello all!

@@ -1,21 +1,26 @@
+<!--
+  The Disqus lazy loading.
+  Powered by: https://osvaldas.info/lazy-loading-disqus-comments
+  v2.0
+  https://github.com/cotes2020/jekyll-theme-chirpy
+  © 2019 Cotes Chung
+  MIT License
+-->
 
+<div id="disqus" class="pt-2 pb-4">
+  <p class="font-italic text-muted small">Comments powered by <a href="https://disqus.com/">Disqus</a>.</p>
+</div>
 
-    {% capture default_slug %}{{ page.slug | default: (page.title | slugify) }}{% endcapture %}
-    {% capture slug %}{{ (page.slug | fallback: default_slug) | downcase | replace: '.', '-' }}{% endcapture %}
+<script src="{{ site.baseurl }}/assets/lib/jquery.disqusloader.min.js"></script>
+<script>
+  var options = {
+    scriptUrl: '//{{ site.disqus.shortname }}.disqus.com/embed.js',
 
-    <div id="disqus_thread"></div>
-    <script>
-        var disqus_config = function () {
-            this.page.url = "{{ site.url }}{{ page.url }}";
-            this.page.identifier = "{{ slug }}";
-        };
+    disqusConfig: function() {
+      this.page.url = '{{ site.url | append: site.baseurl | append: page.url }}';
+      this.page.identifier = '{{ page.url }}';
+    }
+  };
 
-        (function() { // DON'T EDIT BELOW THIS LINE
-        var d = document, s = d.createElement('script');
-        s.src = 'https://mehmetseckin-com.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-        })();
-    </script>
-    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-                  
+  $.disqusLoader('#disqus', options);
+</script>

@@ -1,6 +1,8 @@
 ---
-layout: post
 title: Continuously Delivering a PCF Control
+date: 2020-02-21 00:00:00 +0000
+categories: [Tips and Tricks, DevOps, Power Platform, PowerApps Component Framework]
+tags: [typescript, pcf, azure, devops, pipelines, yaml, continuous, delivery, integration, ci, cd]
 ---
 
 There are lots of things that can be possible with the mighty PowerApps Component Framework. The component development experience is great thanks to the scripting provided by the framework, however once you're happy with your component, "shipping it" may not be so easy. You still have to deal with the produced solution archive (.zip) file. Moreover, the properties of this solution file is in an XML file in your repository, for example, you'll have to increment the version number for the solution that will be output by your build process manually. This is fine if it's a one-off operation, but it can be a little daunting when you have to repeat it over and over during your dev/test loop, or if you want to implement continuous delivery.
@@ -8,7 +10,7 @@ There are lots of things that can be possible with the mighty PowerApps Componen
 ## An example scenario
 I have recently developed a PCF control to learn the framework, and decided to implement continuous integration and delivery. To achieve this, I decided to use Azure Pipelines and release the control as a managed solution to GitHub.
 
-![CI/CD Overview](/images/pcf-pipelines-github.png)
+![CI/CD Overview]({{ "/assets/img/posts/pcf-pipelines-github.png" | relative_url }})
 
 Let's start with a CI pipeline that builds our new control:
 

@@ -1,7 +1,8 @@
 ---
-layout: post
 title: Creating nice JSON strings on PHP
-meta: 03 November 2013, Antakya, Turkey
+date: 2013-11-03 00:00:00 +0000
+categories: [Miscellaneous]
+tags: [php, json, format]
 ---
 
 Hello everyone!

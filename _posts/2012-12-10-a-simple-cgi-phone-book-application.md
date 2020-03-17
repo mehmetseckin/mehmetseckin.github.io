@@ -1,7 +1,8 @@
 ---
-layout: post
 title: A Simple CGI Phone Book Application
-meta: 10 December 2012, Antakya, Turkey
+date: 2012-12-10 00:00:00 +0000
+categories: [Miscellaneous]
+tags: [cgi, perl, assignment]
 ---
 
 w00t! Hello all,
