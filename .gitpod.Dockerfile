@@ -7,5 +7,6 @@ RUN sudo apt-get update \
  && sudo rm -rf /var/lib/apt/lists/*
 
 # Use Python 3 and install ruamel.yaml
-RUN pyenv local 3.7.6 \
+RUN pyenv install 3.7.6 -f \
+    && pyenv local 3.7.6 \
     && pip3 install ruamel.yaml
