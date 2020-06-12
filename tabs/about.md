@@ -13,7 +13,7 @@ _Software Engineer, Consultant_
 
 Hi there! Thanks for visiting my website.
 
-I'm a Software Engineer working as a Lead Consultant at [Hitachi Solutions Europe](https://www.hitachi-solutions.co.uk). My current areas of focus are enterprise cloud software architecture, Microsoft Azure and Power Platform. I design and build effective, scalable and extensible solutions that make people's lives easier.
+I'm a Software Engineer working as a Lead Dynamics 365 Customer Engagement Consultant at [Hitachi Solutions Europe](https://www.hitachi-solutions.co.uk). My current areas of focus are enterprise cloud software architecture, Microsoft Azure and Power Platform. I design and build effective, scalable and extensible solutions that make people's lives easier.
 
 I like to spend my free time reading, playing with my kids, working on my pet projects, contributing to open-source software, exploring new things and blogging.
 
@@ -26,4 +26,4 @@ If you'd like to connect with me, please feel free to:
 - <a href="https://twitter.com/_mehmetseckin"><i class="fab fa-twitter" title="Follow me on Twitter" aria-hidden="true"></i> Follow me on Twitter</a>
 - <a href="/feed.xml"><i class="fa fa-rss" title="Subscribe to my feed" aria-hidden="true"></i> Subscribe to my feed</a>
 
-_**Disclaimer:** Views on this site are solely my own, and does not reflect the opinions of my employer._
+_**Disclaimer:** Views and opinions on this site are solely my own, and they do not necessarily reflect the views and opinions of my employer._
