@@ -5,7 +5,7 @@ categories: [Tips and Tricks, DevOps, Power Platform, PowerApps Component Framew
 tags: [typescript, pcf, azure, devops, pipelines, yaml, continuous, delivery, integration,
   ci, cd]
 seo:
-  date_modified: 2020-03-17 00:40:12 +0000
+  date_modified: 2020-06-11 13:56:22 +0100
 ---
 
 There are lots of things that can be possible with the mighty PowerApps Component Framework. The component development experience is great thanks to the scripting provided by the framework, however once you're happy with your component, "shipping it" may not be so easy. You still have to deal with the produced solution archive (.zip) file. Moreover, the properties of this solution file is in an XML file in your repository, for example, you'll have to increment the version number for the solution that will be output by your build process manually. This is fine if it's a one-off operation, but it can be a little daunting when you have to repeat it over and over during your dev/test loop, or if you want to implement continuous delivery.
@@ -45,18 +45,20 @@ Great, now we have our managed solution. Let's give our build a name to provide 
 
 ```yaml
 variables:
-  version: '1.0.0'
+  version: '1.0' # Set a constant version number (<major>.<minor>)
 
-name: $(version).$(build.buildId)
+name: $(version).$(build.buildId) # Add the build ID as the patch version incremental versions in the format '1.0.x'
 
 # stages: ...
 ```
 
-Now each build has its own unique version number, but our solution version never changes. To update the solution version, we will use a simple PowerShell step:
+Now each build has its own unique version number, but our solution version never changes. To set the solution and control version numbers automatically, we will use a couple of simple PowerShell steps:
 
 ```yaml
 # ...
     steps:
+
+    # Set solution version
     - powershell: |
         echo "Updating solution version: $($env:BUILD_NUMBER)"
         $solution = [xml](gc "$($env:SOLUTION_XML_PATH)")
@@ -64,8 +66,20 @@ Now each build has its own unique version number, but our solution version never
         $solution.Save("$($env:SOLUTION_XML_PATH)")
       displayName: 'Update solution version'
       env:
-        BUILD_NUMBER: $(build.buildNumber) # a.k.a. the 'name', e.g. 1.0.0.5523
+        BUILD_NUMBER: $(build.buildNumber) # a.k.a. the 'name', e.g. 1.0.5523
         SOLUTION_XML_PATH: 'Solutions\Other\Solution.xml'
+
+    # Set control version
+    - powershell: |
+        echo "Updating control version: $($env:BUILD_NUMBER)"
+        $xml = [xml](gc "$($env:CONTROL_MANIFEST_XML_PATH)")
+        $xml.manifest.control.version = "$($env:BUILD_NUMBER)";
+        $xml.Save("$($env:CONTROL_MANIFEST_XML_PATH)")
+      displayName: 'Update control version'
+      env:
+        BUILD_NUMBER: "$(build.buildNumber)"
+        CONTROL_MANIFEST_XML_PATH: 'path/to/ControlManifest.Input.xml'  # This should specify the path to your control's manifest XML file
+
     # - task: VSBuild@1 ...
 ```
 
@@ -128,6 +142,15 @@ stages:
       env:
         BUILD_NUMBER: $(build.buildNumber) # a.k.a. the 'name', e.g. 1.0.0.5523
         SOLUTION_XML_PATH: 'Solutions\Other\Solution.xml'
+    - powershell: |
+        echo "Updating control version: $($env:BUILD_NUMBER)"
+        $xml = [xml](gc "$($env:CONTROL_MANIFEST_XML_PATH)")
+        $xml.manifest.control.version = "$($env:BUILD_NUMBER)";
+        $xml.Save("$($env:CONTROL_MANIFEST_XML_PATH)")
+      displayName: 'Update control version'
+      env:
+        BUILD_NUMBER: "$(build.buildNumber)"
+        CONTROL_MANIFEST_XML_PATH: 'path/to/ControlManifest.Input.xml'
     - task: VSBuild@1
       displayName: "Build"
       inputs:
