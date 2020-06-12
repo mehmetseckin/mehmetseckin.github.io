@@ -1,5 +1,5 @@
 ---
-title: 'It''s time we've added some emojis to Dynamics 365!'
+title: 'It''s time we''ve added some emojis to Dynamics 365!'
 date: 2020-06-12 23:47:12 +0100
 categories: [Power Platform, PowerApps Component Framework, Dynamics 365]
 tags: [typescript, pcf, timezone, react, fluent-ui, reactions, emoji]
