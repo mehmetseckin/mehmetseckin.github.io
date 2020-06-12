@@ -15,7 +15,7 @@ Here is an outline of the available features:
 
 The control allows users to react to records on a form. 👍
 
-![Reactions on form](assets/img/posts/reactions-on-form.png)
+![Reactions on form]({{ "assets/img/posts/reactions-on-form.png" | relative_url }})
 
 ### ✅ Ability to configure the available emoji set
 
@@ -25,19 +25,19 @@ The emoji reactions available to the users are configurable on a per-control bas
 
 When hovered over, reactions will show a summary of their owners. 🚁
 
-![Owner Summary](assets/img/posts/owner-summary.png)
+![Owner Summary]({{ "assets/img/posts/owner-summary.png" | relative_url }})
 
 ### ✅ Ability to list reaction owners in a modal
 
 The detailed list of owners for a reaction can be seen by clicking the summary in the tooltip. 📃
 
-![Owner List](assets/img/posts/owners-modal.png)
+![Owner List]({{ "assets/img/posts/owners-modal.png" | relative_url }})
 
 ### ✅ Read-only and field security support
 
 When the attribute is read-only, the control will not allow users to add or remove any reactions. However the owner summary and modal will still display the reaction owners. 🔒
 
-![Read-only support](assets/img/posts/read-only-support.png)
+![Read-only support]({{ "assets/img/posts/read-only-support.png" | relative_url }})
 
 I'd also like to add a couple more features to enhance the experience, such as:
 
