@@ -7,7 +7,7 @@ seo:
   date_modified: 2020-06-12 23:47:12 +0100
 ---
 
-Dynamics 365 and Model-driven Apps are great, and the shiny new Unified Interface looks awesome. However, sometimes the user interface can get a little bit repetitive and monotonous. I recently thought about bringing emojis and reactions into Dynamics 365 / Model-driven Apps. So, I started working on a PCF component called [Reactions](https://github.com/mehmetseckin/Reactions) ⚡!
+Dynamics 365 and Model-driven Apps are great, and the shiny new Unified Interface looks awesome. However, sometimes the user interface can get a little bit repetitive and monotonous. I recently thought about bringing emojis and reactions into Dynamics 365 / Model-driven Apps. So, I started working on a PCF component called [Reactions](https://pcf.gallery/reactions/) ⚡!
 
 Here is an outline of the available features:
 
