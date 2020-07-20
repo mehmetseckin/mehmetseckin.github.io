@@ -164,7 +164,6 @@ defaults:
     values:
       layout: compress
 
-
 sass:
   sass_dir: /assets/css
   style: compressed
@@ -180,6 +179,9 @@ compress_html:
   ignore:
     envs: []
 
+include:
+  - _.well-known
+
 exclude:
   - vendor        # Avoid Jekyll mistakenly read the vender directory on Travis-CI's VM .
   - Gemfile.lock
@@ -190,6 +192,7 @@ exclude:
 sitemap_exclude:  # Sitemap will exclude the following items.
   fuzzy:
     - /assets/
+    - /.well-known/
   accurate:
     - /norobots/
     - /tabs/
