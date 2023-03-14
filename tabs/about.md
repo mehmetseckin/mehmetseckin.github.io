@@ -20,7 +20,7 @@ I like to spend my free time reading, playing with my kids, working on my pet pr
 If you'd like to connect with me, please feel free to:
 
 - <a href="https://github.com/mehmetseckin"><i class="fab fa-github" title="Fork me on GitHub" aria-hidden="true"></i> Fork me on GitHub</a>
-- <a href="https://stackoverflow.com/story/mehmetseckin"><i class="fab fa-stack-overflow" title="View my developer story on StackOverflow" aria-hidden="true"></i> View my developer story on StackOverflow</a>
+- <a href="https://stackoverflow.com/users/824495/mehmetseckin"><i class="fab fa-stack-overflow" title="View my answers on StackOverflow" aria-hidden="true"></i> View my answers on StackOverflow</a>
 - <a href="https://linkedin.com/in/mehmet-seckin"><i class="fab fa-linkedin" title="Connect with me on LinkedIn" aria-hidden="true"></i> Connect with me on LinkedIn</a>
 - <a href="https://dev.to/mehmetseckin"><i class="fab fa-dev" title="Visit my DEV.to profile" aria-hidden="true"></i> Visit my DEV.to profile</a>
 - <a href="https://twitter.com/_mehmetseckin"><i class="fab fa-twitter" title="Follow me on Twitter" aria-hidden="true"></i> Follow me on Twitter</a>
