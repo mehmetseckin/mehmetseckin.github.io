@@ -6,7 +6,6 @@ tags: [ai, sofware, power platform]
 seo:
   date_modified: 2025-07-13 00:00:00 +0000
 ---
-# **Are We Fooling Ourselves?**
 
 ![A humorous illustration of a developer running in a hamster wheel that looks like a progress bar, feeling productive but actually going nowhere]({{ "/assets/img/posts/are-we-fooling-ourselves-hamster-wheel.png" | relative_url }})
 
