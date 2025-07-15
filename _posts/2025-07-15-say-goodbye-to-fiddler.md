@@ -4,7 +4,7 @@ meta: 2025-07-15 15:00:00 +0000
 categories: [PCF, Software Engineering, Power Platform]
 tags: [ai, sofware, power platform]
 seo:
-  date_modified: 2025-07-13 00:00:00 +0000
+  date_modified: 2025-07-13 15:00:00 +0000
 ---
 
 ![PCF CLI Proxy Tool logo replacing Fiddler]({{ "/assets/img/posts/say-goodbye-to-fiddler.png" | relative_url }})
