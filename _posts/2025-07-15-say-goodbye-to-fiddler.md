@@ -2,7 +2,7 @@
 title: 'Say Goodbye to Fiddler: A Modern Proxy Alternative for developing PCF controls'
 meta: 2025-07-15 15:00:00 +0000
 categories: [PCF, Software Engineering, Power Platform]
-tags: [ai, sofware, power platform]
+tags: [pcf, sofware, power platform]
 seo:
   date_modified: 2025-07-13 15:00:00 +0000
 ---
